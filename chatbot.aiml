@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>HI</pattern>
+    <template>Hello Aman</template>
+  </category>
+  <category>
+  <pattern>HELLO I AM *</pattern>
+  <template>Hello <star/></template>
+  </category>
+  <category>
+  <pattern>HI MY NAME IS *</pattern>
+  <template>Hi <star/>, how are you?</template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE WEATHER IN *</pattern>
+    <template>
+      <think>
+        <set name="location"><star/></set>
+      </think>
+      Let me check the weather in <get name="location"/>.
+    </template>
+  </category>
+</aiml>
